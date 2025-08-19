@@ -71,12 +71,12 @@
         .darkmode {
         --background: #070b1d;
         --text-color: #ffffff;
-        --prjoect-bg: #fff;
-        --project-border: #ddd;
-        --project-shadow: rgba(0, 0, 0, 0.03);
-        --project-hover-shadow: rgba(0, 0, 0, 0.07);
+        --prjoect-bg: #040712;
+        --project-border: #292828;
+        --project-shadow: rgba(120, 120, 120, 0.03);
+        --project-hover-shadow: rgba(120, 120, 120, 0.07);
         --prjoect-img-bg: #eee;
-        --project-desc-color: #666;
+        --project-desc-color: #a8a8a8;
         }
         @media (max-width: 800px) {
             .grid {
