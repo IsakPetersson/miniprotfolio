@@ -1,12 +1,12 @@
         :root {
             --background: #fefefe;
             --text-color: #333;
-            --prjoect-bg: #1f32bb;
-            --project-border: #d91313;
+            --prjoect-bg: #fff;
+            --project-border: #ddd;
             --project-shadow: rgba(0, 0, 0, 0.03);
             --project-hover-shadow: rgba(0, 0, 0, 0.07);
-            --prjoect-img-bg: #10e11e;
-            --project-desc-color: #f20794;
+            --prjoect-img-bg: #eee;
+            --project-desc-color: #666;
         }
         
         body {
