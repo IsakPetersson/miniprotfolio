@@ -1,10 +1,17 @@
         :root {
-            --primary-color: #0078d4;
+            --background: #fefefe;
+            --text-color: #333;
+            --prjoect-bg: #1f32bb;
+            --project-border: #d91313;
+            --project-shadow: rgba(0, 0, 0, 0.03);
+            --project-hover-shadow: rgba(0, 0, 0, 0.07);
+            --prjoect-img-bg: #10e11e;
+            --project-desc-color: #f20794;
         }
         
         body {
-            background: var(--primary-color);
-            color: #222;
+            background: var(--background);
+            color: var(--text-color);
             font-family: 'Segoe UI', Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -27,18 +34,18 @@
             gap: 24px;
         }
         .project {
-            background: #fff;
-            border: 1px solid #ddd;
+            background: var(--prjoect-bg);
+            border: 1px solid var(--project-border);
             border-radius: 8px;
             padding: 24px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+            box-shadow: 0 2px 8px var(--project-shadow);
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             transition: box-shadow 0.2s;
         }
         .project:hover {
-            box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+            box-shadow: 0 4px 16px var(--project-hover-shadow);
         }
         .project-img {
             width: 100%;
@@ -46,7 +53,7 @@
             object-fit: cover;
             border-radius: 6px;
             margin-bottom: 16px;
-            background: #eee;
+            background: var(--prjoect-img-bg);
         }
         .project-title {
 
@@ -54,11 +61,22 @@
             font-size: 1.1rem;
             font-weight: 500;
             margin-bottom: 8px;
-            color: #333;
+            color: var(--text-color);
         }
         .project-desc {
             font-size: 0.95rem;
-            color: #666;
+            color: var(--project-desc-color);
+        }
+
+        .darkmode {
+        --background: #070b1d;
+        --text-color: #ffffff;
+        --prjoect-bg: #fff;
+        --project-border: #ddd;
+        --project-shadow: rgba(0, 0, 0, 0.03);
+        --project-hover-shadow: rgba(0, 0, 0, 0.07);
+        --prjoect-img-bg: #eee;
+        --project-desc-color: #666;
         }
         @media (max-width: 800px) {
             .grid {
