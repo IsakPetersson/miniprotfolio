@@ -11,9 +11,15 @@ const disableDarkMode = () => {
     localStorage.setItem('darkmode', null)
 }
 
+const returnBtn = document.getElementById('return')
+
 if (darkmode === 'active') enableDarkMode()
 
 themeSwitch.addEventListener('click', () => {
     darkmode = localStorage.getItem('darkmode')
     darkmode!== 'active' ? enableDarkMode() : disableDarkMode()
+})
+
+returnBtn.addEventListener('click', () => {
+    window.location.href = 'index.html'
 })

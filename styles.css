@@ -1,7 +1,7 @@
         :root {
             --background: #fefefe;
             --text-color: #333;
-            --prjoect-bg: #fff;
+            --prjoect-bg: #fff      ;
             --project-border: #ddd;
             --project-shadow: rgba(0, 0, 0, 0.03);
             --project-hover-shadow: rgba(0, 0, 0, 0.07);
@@ -34,6 +34,14 @@
             grid-template-rows: repeat(2, 1fr);
             gap: 24px;
         }
+
+        .grid2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 24px;
+        }    
+
         .project {
             background: var(--prjoect-bg);
             border: 1px solid var(--project-border);
@@ -95,9 +103,19 @@
             top: 20px;
             right: 20px;
         }
-
-        #theme-switch img {
-            fill: var(--text-color);
+        #return {
+            width: 50px;
+            height: 50px;
+            padding: 0;
+            border-radius: 50%;
+            background-color: var(--button-bg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            position: fixed;
+            top: 20px;
+            left: 20px;
         }
 
         #theme-switch img:last-child {
@@ -109,6 +127,18 @@
         }
 
         .darkmode #theme-switch img:last-child {
+            display: block;
+        }
+
+        #return img:last-child {
+            display: none;
+        }
+
+        .darkmode #return img:first-child {
+            display: none;
+        }
+
+        .darkmode #return img:last-child {
             display: block;
         }
         
@@ -125,6 +155,28 @@
             border-radius: 6px;
             margin-bottom: 16px;
             background: var(--prjoect-img-bg);
+        }
+
+        .project-detail {
+        background: var(--prjoect-bg);
+        border-radius: 8px;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 2px 8px var(--project-shadow);
+        }
+
+        .project-detail-img {
+            width: 100%;
+            max-width: 220px;
+            border-radius: 6px;
+            margin-bottom: 12px;
+            object-fit: cover;
+        }
+
+        .project-detail-desc {
+            text-align: center;
         }
 
 
