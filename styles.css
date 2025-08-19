@@ -7,6 +7,7 @@
             --project-hover-shadow: rgba(0, 0, 0, 0.07);
             --prjoect-img-bg: #eee;
             --project-desc-color: #666;
+            --button-bg: #e0e0e0;
         }
         
         body {
@@ -69,15 +70,51 @@
         }
 
         .darkmode {
-        --background: #070b1d;
+        --background: #212121;
         --text-color: #ffffff;
-        --prjoect-bg: #040712;
-        --project-border: #292828;
+        --prjoect-bg: #1c1c1c;
+        --project-border: #646464;
         --project-shadow: rgba(120, 120, 120, 0.03);
         --project-hover-shadow: rgba(120, 120, 120, 0.07);
         --prjoect-img-bg: #eee;
-        --project-desc-color: #a8a8a8;
+        --project-desc-color: #d7d7d7;
+        --button-bg: #464646;
         }
+
+        #theme-switch {
+            width: 50px;
+            height: 50px;
+            padding: 0;
+            border-radius: 50%;
+            background-color: var(--button-bg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+
+        #theme-switch img {
+            fill: var(--text-color);
+        }
+
+        #theme-switch img:last-child {
+            display: none;
+        }
+
+        .darkmode #theme-switch img:first-child {
+            display: none;
+        }
+
+        .darkmode #theme-switch img:last-child {
+            display: block;
+        }
+        
+
+
+
         @media (max-width: 800px) {
             .grid {
                 grid-template-columns: 1fr 1fr;
