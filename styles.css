@@ -208,6 +208,13 @@
             transform: scale(1.1);
         }
 
+        #link {
+            transition: transform ease-in-out 0.2s;
+        }
+        #link:hover {
+            transform: scale(1.1);
+        }
+
         #theme-switch img:last-child {
             display: none;
         }
@@ -255,6 +262,16 @@
             display: none;
         }
         .darkmode #contact3 img:last-child {
+            display: block;
+        }
+
+        #link img:last-child {
+            display: none;
+        }
+        .darkmode #link img:first-child {
+            display: none;
+        }
+        .darkmode #link img:last-child {
             display: block;
         }
         
