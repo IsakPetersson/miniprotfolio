@@ -13,6 +13,10 @@ const disableDarkMode = () => {
 
 const returnBtn = document.getElementById('return')
 
+const contact1Btn = document.getElementById('contact1')
+const contact2Btn = document.getElementById('contact2')
+const contact3Btn = document.getElementById('contact3')
+
 if (darkmode === 'active') enableDarkMode()
 
 themeSwitch.addEventListener('click', () => {
@@ -20,6 +24,24 @@ themeSwitch.addEventListener('click', () => {
     darkmode!== 'active' ? enableDarkMode() : disableDarkMode()
 })
 
+if(returnBtn) {
 returnBtn.addEventListener('click', () => {
     window.location.href = 'index.html'
 })
+}
+
+if (contact1Btn) {
+contact1Btn.addEventListener('click', () => {
+    window.location.href = 'https://www.instagram.com/isakpetersson0/'
+})
+}
+if (contact2Btn) {
+contact2Btn.addEventListener('click', () => {
+    window.location.href = 'https://github.com/IsakPetersson'
+})
+}
+if (contact3Btn) {
+contact3Btn.addEventListener('click', () => {
+    window.location.href = 'https://www.linkedin.com/in/isak-petersson-801a2937a/'
+})
+}
